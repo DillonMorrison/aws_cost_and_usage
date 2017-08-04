@@ -1,5 +1,11 @@
 # Credit to Eric Fultz from ProductOps @ http://productops.com/
 
+# Requisites include:
+# Only tested this with python3. You’ll need `pip3 install boto3 botocore` 
+# The script will pull your credentials from the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY 
+# This script does not re-compress the file before uploading. Due to low volume of data with Cost and Usage Report, this shouldn't impact performance much.
+# This script does not delete the file it creates on your local filesystem
+
 import boto3
 import re
 import json
