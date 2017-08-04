@@ -1,4 +1,4 @@
-# Credit to Eric Fultz from ProductOps
+# Credit to Eric Fultz from ProductOps @ http://productops.com/
 
 import boto3
 import re
